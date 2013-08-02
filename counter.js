@@ -10,20 +10,21 @@ else{
 var engRuss = 45;
 var russEng = 55;
 var russUa = 25;
+var langSwitcher =  $('#element_2').val();
 
 function counting(lang1){
 var result = Math.ceil(($('#element_1').val()/1800)*lang1);
 $('#res h4').text(result +' грн.');
 }
 
-if($('#element_2').val()==1){ // Eng => Russ
+if(langSwitcher ==1){ // Eng => Russ
 	counting(engRuss);
 }
 
-else if($('#element_2').val()==2){ //Russ => Eng
+else if(langSwitcher ==2){ //Russ => Eng
 	counting(russEng);
 }
-else if($('#element_2').val()==3){ // Russ => Ua
+else if(langSwitcher ==3){ // Russ => Ua
 	counting(russUa);
 }
 }
