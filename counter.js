@@ -10,27 +10,21 @@ $('#res h4').text('Введите число знаков');
 else{
 
 if($('#element_2').val()==1){ // Eng => Russ
-var count1 = $('#element_1').val() ;
-var count2 = 1800;
-var result = (count1/count2)*45;
-var result2 = Math.ceil(result);
-var result3 = $('#res h4').text(result2 +' грн.');
+
+var result = Math.ceil($('#element_1').val()/1800)*45);
+$('#res h4').text(result +' грн.');
 }
 
 else if($('#element_2').val()==2){ //Russ => Eng
-var count1 = $('#element_1').val();
-var count2 = 1800;
-var result = (count1/count2)*55;
-var result2 = Math.ceil(result);
-var result3 = $('#res h4').text(result2 +' грн.');
+
+var result = Math.ceil($('#element_1').val()/1800)*55);
+$('#res h4').text(result +' грн.');
  
 }
 else if($('#element_2').val()==3){ // Russ => Ua
-var count1 = $('#element_1').val();
-var count2 = 1800;
-var result = (count1/count2)*25;
-var result2 = Math.ceil(result);
-var result3 = $('#res h4').text(result2 +' грн.');
+
+var result = Math.ceil($('#element_1').val()/1800)*25);
+$('#res h4').text(result +' грн.');
 }
 }
 });//OnClick	
